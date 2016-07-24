@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Apple menu</title>
+<style>
+body{ background:url(img/20140403155939_xy8dU.thumb.700_0.jpeg) no-repeat; background-size:cover; width:100%; height:100%;}
+a{text-decoration: none;width:120px;height: 30px;border:1px solid #fff;position:absolute;top:20px;font-size: 20px;line-height: 30px;text-align: center;border-radius: 2px;color: #fff;}
+a:hover{color:red;border: 1px solid #ccc;}
+a.back{right:50px;}
+a.first{right:180px;}
+.box{ width:100%; position:absolute; left:0; bottom:0; text-align:center;}
+img{ width:110px; height:110px; margin:20px;}
+</style>
+<script>
+window.onload=function(){
+	var oBox=document.getElementById('box');
+	var aImg=document.getElementsByTagName('img');
+	document.onmousemove=function(ev){
+		var oEvent=ev || event;
+		for(var i=0; i<aImg.length; i++){
+			// var json=getpos(aImg[i]);
+			// var a=aImg[i].offsetWidth/2+json.left-oEvent.clientX;
+			// var b=aImg[i].offsetHeight/2+json.top-oEvent.clientY;
+			var a=aImg[i].offsetLeft+aImg[i].offsetWidth/2-oEvent.clientX;
+                    	var b=aImg[i].offsetTop+oBox.offsetTop+aImg[i].offsetHeight/2-oEvent.clientY;
+			var c=Math.sqrt(a*a+b*b);
+			var cur=1-c/500;
+			(cur<.5)&&(cur=.5);
+			aImg[i].style.width=cur*220+'px';
+			aImg[i].style.height=cur*220+'px';	
+		}
+	}
+	// function getpos(obj){
+	// 	var top=0;
+	// 	var left=0;
+	// 	while(obj){	
+	// 		left+=obj.offsetLeft;
+	// 		top+=obj.offsetTop;
+	// 		obj=obj.offsetParent;
+	// 	}
+	// 	return{'left':left,'top':top}
+	// }
+}
+</script>
+</head>
+
+<body>
+<a class="back" href="../works/works.html">返回上一层</a>
+<a class="first" href="../../index.html">去到首页</a>
+<div class="box" id="box">
+	<img src="img/1.png" alt="图片1"/>
+	<img src="img/2.png" alt="图片2"/>
+	<img src="img/3.png" alt="图片3"/>
+	<img src="img/4.png" alt="图片4"/>
+	<img src="img/5.png" alt="图片5"/>
+</div>
+</body>
+</html>

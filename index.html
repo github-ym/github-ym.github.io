@@ -1,186 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="lang">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0"/>
-<title>无标题文档</title>
-<style>
-	*{ padding:0; margin:0;list-style: none;}
-
-	/*logo部分*/
-	.header-left{ width:3rem; height:3rem; background:url(img/1.png) center center no-repeat; border-right:1px solid #4c6279; background-size:1rem;}
-	.header-right{ width:3rem; height:3rem; background:url(img/2.png) center center no-repeat; border-left:1px solid #4c6279; background-size:0.925rem 0.6rem;}
-	.header{ display:-webkit-box; height:3rem; background:#344a61;}
-	.header h1{ -webkit-box-flex:1; color:#FFF; text-align:center; line-height:3rem; font-size:0.8rem;font-weight: normal;}
-
-	/*homepage部分*/
-	.homepage{height: 2.15rem;font-size:0.6rem;line-height: 2.15rem;text-align:left;color: #c1c1c1;border-bottom: 2px solid #e7e7e7;box-sizing:border-box;width: 14rem;margin:0 auto;}
-
-	/*a small caption部分*/
-	.caption{margin:0 auto;margin-top: 1rem;width: 14rem;height: 9.3rem;}
-	.caption img{width: 14rem;height: 9.3rem;}
-
-	/*well,hello there部分*/
-	.well{margin:0 auto;margin-top:0.45rem;width:14rem;border-bottom: 2px solid #e7e7e7;overflow: hidden;}
-	.well h2{height: 2.1rem;line-height: 2.1rem;font-size:0.8rem; text-align:left;}
-	.well p{line-height: 1rem;font-size: 0.6rem;margin-bottom: 1rem;color:#8b8b8b;}
-
-	/*easy to use!和built with care!部分*/
-	.list{width: 14rem;height:10rem;margin:0 auto;margin-top: 1rem;border-bottom: 2px solid #e7e7e7;}
-	.list .list-top{height: 5rem;}
-	.list .list-top img{width: 4rem;height: 4rem;float: left;}
-	.list .list-top .right{width:9rem;height:5rem;float:right;}
-	.list .list-top .right h3{line-height: 1rem;font-size: 0.8rem;}
-	.list .list-top .right p{line-height: 1rem;font-size: 0.6rem;color:#8b8b8b}
-
-	/*some of our works部分*/
-	.some{margin-top: 0.25rem;}
-	.some .list-img{width:17rem;height:10.5rem; }
-	.some .list-img li{width: 4rem;height: 4rem;float: left;margin-right:1rem;margin-bottom: 1rem; }
-	.some .list-img li img{width: 4rem;height: 4rem;}
-
-	/*TESTIMONIALS部分*/
-	.some .renren{width:14rem;height: 4rem;padding-bottom:1rem;border-bottom: 2px solid #e7e7e7;}
-
-	.some .renren img{width: 4rem;height: 4rem;float: left;}
-	.some .renren .right{width: 9rem;float:right;height: 4rem;}
-	.some .renren .right p{line-height: 1rem;font-size: 0.6rem;margin-bottom: 0;color:#8b8b8b;}
-	.some .renren .right em{display:block;line-height: 1rem;font-size: 0.5rem;font-weight: bold;text-align: right;color:#8b8b8b;}
-
-	/*social部分*/
-	.social h2{text-align: center;}
-	.social p{text-align: center;margin-bottom: 1rem;}
-	.social .list-social{width:9.7rem;height: 2.5rem;margin:0 auto; margin-bottom:1rem;}
-	.social .list-social li{width: 2.5rem;height: 2.5rem;float: left;}
-	.social .list-social li.margin{margin: 0 1.1rem;}
-	.social .list-social li img{width: 2.5rem;height: 2.5rem;}
-
-	/*copyRight 部分*/
-	.copyright{width: 14rem;height: 2rem;margin:0 auto;padding:1rem 0;}
-	.copyright span{display: block;width: 14rem;height: 1rem;line-height: 1rem;text-align: center;font-size: 0.6rem;color: #868686;}
-
-	/*footer部分*/
-	.footer{height:3rem;background: #000;margin: 0 auto;}
-	.footer ul{width:16rem;height: 2rem;overflow: hidden; }
-	.footer ul li{width: 1rem;height:1rem;margin: 0.5rem;float: left;cursor: pointer;}
-	.footer ul li img{width: 1rem;height:1rem;}
-	.footer span{display:block;width:16rem;height: 1rem;text-align: center;font-size: 0.6rem;color: #a2a2a2;}
-</style>
-<script>
-;(function(){
-	function change(){
-		var font=document.documentElement.clientWidth/(320/20);
-		document.documentElement.style.fontSize=font+'px';	
-	}
-	window.addEventListener('resize',change,false);
-	change();
-})();
-</script>
+<meta charset="utf-8" />
+<title>杨明个人网站</title>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/keyd.css" />
+<script src="js/keyd.js"></script>
 </head>
-
 <body>
-	<!-- header -->
-	<div class="header">
-	    	<div class="header-left"></div>
-	        <h1>HEXAGONE</h1>
-	        <div class="header-right"></div>
-	</div>
-
-	<!-- homepage -->
-	<div class="homepage">HOMEPAGE</div>
-
-	<!-- a small caption -->
-	<div class="caption">
-		<img src="img/small-caption.png" alt="img/small-caption.png">
-	</div>
-
-	<!-- well,hello there -->
-	<div class="well">
-		<h2>WELL,HELLO THERE!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo a voluptates autem. Dolores commodi eligendi perspiciatis, culpa natus autem magni minima sed!Est.</p>
-	</div>
-
-	<!-- easy to use!和built with care!部分-->
-	<ul class="list">
-		<li class="list-top">
-			<img src="img/use.png" alt="img/use.png">
-			<div class="right">
-				<h3>EASY TO USE!</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo a voluptates autem.</p>
-			</div>
-		</li>
-		<li class="list-top">
-			<img src="img/care.png" alt="img/care.png">
-			<div class="right">
-				<h3>BUILT WITH CARE!</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo a voluptates autem.</p>
-			</div>
-		</li>	
-	</ul>
-	
-	<!-- some of our works -->
-	<div class="well some">
-		<h2>SOME OF OUR WORKS!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<ul class="list-img">
-			<li><img src="img/care.png" alt="img/care.png"></li>
-			<li><img src="img/care.png" alt="img/care.png"></li>
-			<li><img src="img/care.png" alt="img/care.png"></li>
-			<li><img src="img/care.png" alt="img/care.png"></li>
-			<li><img src="img/care.png" alt="img/care.png"></li>
-			<li><img src="img/care.png" alt="img/care.png"></li>
-		</ul>
-	</div>
-	<!-- TESTIMONIALS部分 -->
-	<div class="well some">
-		<h2>TESTIMONIALS</h2>
-		<p>I think the most interesting thing in my family is my computer. My father bought it for me 3 years ago.</p>
-		<div class="renren">
-			<img src="img/renren.png" alt="img/renren.png">
-			<div class="right">
-				<p>I think the most interesting thing in my family is my computer.3 years ago.</p>
-				<em>Lorem-Ipsuminteresting</em>
-			</div>
-			
+	<div class="box">
+		<div class="top_logo">personal website</div>
+		<div class="decorate"></div>
+		<div class="nav" id="nav">
+			<a href="./demo/Here I am/Here I am.html" class="gv">Here I Am</a>
+			<a href="./demo/Personal skills/Personal skills.html" class="gv">Personal Skills</a>
+			<a href="./demo/works/works.html" class="gv">Demo</a>
+			<a href="demo/rainbow/index.html" class="gv">CSS3 Rotate</a>
+			<a href="demo/css3/explode.html" class="gv">Explode</a>
+			<a href="demo/tel/tel.html" class="gv">Contact Me</a>
 		</div>
-	</div>
-	<!-- GET SOCIAL WITH US!部分 -->
-	<div class="well social">
-		<h2>GET SOCIAL WITH US!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-		<ul class="list-social">
-			<li><img src="img/FB.png" alt="img/FB.png"></li>
-			<li class="margin"><img src="img/g-mail.png" alt="img/g-mail.png"></li>
-			<li><img src="img/twitter.png" alt="img/twitter.png"></li>
-		</ul>
-	</div>
-	<!-- copyright部分 -->
-	<div class="copyright">
-		<span>COPYRIGHT 2013</span>
-		<span>ALL RIGHTS RESERVED</span>
-	</div>
-	<!-- footer部分 -->
-	<div class="footer">
-		<ul>
-			<li><img src="img/footer-1.png" alt="img/footer-1.png"></li>
-			<li><img src="img/footer-2.png" alt="img/footer-2.png"></li>
-			<li><img src="img/footer-3.png" alt="img/footer-3.png"></li>
-			<li><img src="img/footer-4.png" alt="img/footer-4.png"></li>
-			<li><img src="img/footer-5.png" alt="img/footer-5.png"></li>
-			<li><img src="img/footer-6.png" alt="img/footer-6.png"></li>
-			<li><img src="img/footer-7.png" alt="img/footer-7.png"></li>
-			<li><img src="img/footer-8.png" alt="img/footer-8.png"></li>
-		</ul>
-		<span>TAP THE ICONS TO CHANGE THE MENU STYLE</span>
+		<canvas id="canvas" width="1920" height="912"></canvas>
 	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
